@@ -1,0 +1,110 @@
+[
+  {
+    "NombreU": "Mesoamericana",
+    "Sede": null,
+    "Alumnos": [
+      {
+        "NoCarne": "C1",
+        "Notas": [
+          {
+            "Curso": "Curso1",
+            "Punteo": 80
+          },
+          {
+            "Curso": "Curso2",
+            "Punteo": 80
+          },
+          {
+            "Curso": "Curso3",
+            "Punteo": 80
+          }
+        ],
+        "FirstName": "nombre1",
+        "LastName": "apellido1",
+        "Address": 0,
+        "DateOfBirth": "0001-01-01T00:00:00"
+      }
+    ]
+  },
+  {
+    "NombreU": "Mesoamericana",
+    "Sede": null,
+    "Alumnos": [
+      {
+        "NoCarne": "C2",
+        "Notas": [
+          {
+            "Curso": "Curso1",
+            "Punteo": 70
+          },
+          {
+            "Curso": "Curso2",
+            "Punteo": 50
+          },
+          {
+            "Curso": "Curso3",
+            "Punteo": 90
+          }
+        ],
+        "FirstName": "nombre2",
+        "LastName": "apellido2",
+        "Address": 0,
+        "DateOfBirth": "0001-01-01T00:00:00"
+      }
+    ]
+  },
+  {
+    "NombreU": "Lndivar",
+    "Sede": null,
+    "Alumnos": [
+      {
+        "NoCarne": "C3",
+        "Notas": [
+          {
+            "Curso": "Curso1",
+            "Punteo": 90
+          },
+          {
+            "Curso": "Curso2",
+            "Punteo": 90
+          },
+          {
+            "Curso": "Curso3",
+            "Punteo": 80
+          }
+        ],
+        "FirstName": "nombre3",
+        "LastName": "apellido3",
+        "Address": 0,
+        "DateOfBirth": "0001-01-01T00:00:00"
+      }
+    ]
+  },
+  {
+    "NombreU": "San Carlos",
+    "Sede": null,
+    "Alumnos": [
+      {
+        "NoCarne": "C1",
+        "Notas": [
+          {
+            "Curso": "Curso1",
+            "Punteo": 50
+          },
+          {
+            "Curso": "Curso2",
+            "Punteo": 60
+          },
+          {
+            "Curso": "Curso3",
+            "Punteo": 40
+          }
+        ],
+        "FirstName": "nombre1",
+        "LastName": "apellido1",
+        "Address": 0,
+        "DateOfBirth": "0001-01-01T00:00:00"
+      }
+    ]
+  }
+]
