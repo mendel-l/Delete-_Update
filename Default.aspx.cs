@@ -11,8 +11,8 @@ namespace Delete__Update
 {
     public partial class _Default : Page
     {
-        static List<Alumno> alumnoTemp = new List<Alumno>();
         static List<Nota> NotasTemp = new List<Nota>();
+        static List<Alumno> alumnoTemp = new List<Alumno>();
         static List<Universidad> universidad = new List<Universidad>();
 
         private void SaveJsonUnivercity()

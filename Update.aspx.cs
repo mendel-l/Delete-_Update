@@ -55,14 +55,16 @@ namespace Delete__Update
         }
         void ChangeDataStudent()
         {
-            foreach (var uni in universidades)
-            {
-                int EditStudent = uni.Alumnos.FindIndex(c => c.NoCarne == SearchCarne);
+            SearchCarne = TextBoxSearch.Text;
 
-                if (EditStudent != -1)
+            foreach (var u in universidades)
+            {
+                int Edit = u.Alumnos.FindIndex(c => c.NoCarne == SearchCarne);
+
+                if (Edit > -1)
                 {
-                    uni.Alumnos[EditStudent].FirstName = TextBoxName.Text;
-                    uni.Alumnos[EditStudent].LastName = TextBoxLastName.Text;
+                    u.Alumnos[Edit].FirstName = TextBoxName.Text;
+                    u.Alumnos[Edit].LastName = TextBoxLastName.Text;
 
                     SaveJsonUnivercity();
                 }
@@ -74,42 +76,11 @@ namespace Delete__Update
         }
         protected void ButtonSerchStudent_Click(object sender, EventArgs e)
         {
-            SearchCarne = TextBoxSearch.Text;
-            bool encontrado = false;
-
-            foreach (var uni in universidades)
-            {
-                Alumno EditStudent = uni.Alumnos.Find(c => c.NoCarne == SearchCarne);
-
-                if (EditStudent != null)
-                {
-                    TextBoxName.Text = EditStudent.FirstName;
-                    TextBoxLastName.Text = EditStudent.LastName;
-                    encontrado = true;
-                }
-            }
-            if (!encontrado)
-            {
-                Response.Write("<script>alert('no se encontró el carné')</script>");
-                SearchCarne = "";
-                TextBoxName.Text = "";
-                TextBoxLastName.Text = "";
-            }
+            SearchStudent();
         }
         protected void ButtonChangeData_Click(object sender, EventArgs e)
         {
-            foreach (var uni in universidades)
-            {
-                int EditStudent = uni.Alumnos.FindIndex(c => c.NoCarne == SearchCarne);
-
-                if (EditStudent != -1)
-                {
-                    uni.Alumnos[EditStudent].FirstName = TextBoxName.Text;
-                    uni.Alumnos[EditStudent].LastName = TextBoxLastName.Text;
-
-                    SaveJsonUnivercity();
-                }
-            }
+            ChangeDataStudent();
         }
     }
 }

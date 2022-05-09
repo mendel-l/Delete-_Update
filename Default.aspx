@@ -34,10 +34,14 @@
         <asp:GridView ID="GridView2" runat="server">
         </asp:GridView>
         <p>
-            <asp:Button ID="ButtonAddStudentU" runat="server" OnClick="ButtonAddStudentU_Click" Text="Ingresar Alumno Universidad" />
+            &nbsp;</p>
+        <p>
+            &nbsp;</p>
+        <p>
+            <asp:Button ID="ButtonAddStudentU" runat="server" OnClick="ButtonAddStudentU_Click" Text="Ingresar Alumno Universidad" Width="282px" />
         </p>
         <p>
-            <asp:Button ID="ButtonSaveUnivercity" runat="server" OnClick="ButtonSaveUnivercity_Click" Text="Guardar Universidad" />
+            <asp:Button ID="ButtonSaveUnivercity" runat="server" OnClick="ButtonSaveUnivercity_Click" Text="Guardar Universidad" Width="282px" />
         </p>
         <h1>&nbsp;</h1>
         <p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>

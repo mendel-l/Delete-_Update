@@ -53,6 +53,7 @@ namespace Delete__Update
         }
         void DeleteDataStudent()
         {
+            SearchDeleteCarne = TextBoxSerchDelete.Text;
             foreach (var uni in universidades)
             {
                 Alumno DeleteStudent = uni.Alumnos.Find(c => c.NoCarne == SearchDeleteCarne);
@@ -77,7 +78,6 @@ namespace Delete__Update
         protected void ButtonDeleteData_Click(object sender, EventArgs e)
         {
             DeleteDataStudent();
-            SaveJsonUnivercity();
         }
     }
 }
